@@ -25,6 +25,7 @@ public class JdbcType {
         TYPES.put("CLOB", Types.CLOB);
         TYPES.put("DATALINK", Types.DATALINK);
         TYPES.put("DATE", Types.DATE);
+        TYPES.put("DATETIME", Types.DATE);
         TYPES.put("DECIMAL", Types.DECIMAL);
         TYPES.put("DISTINCT", Types.DISTINCT);
         TYPES.put("DOUBLE", Types.DOUBLE);
