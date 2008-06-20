@@ -29,13 +29,7 @@ public class ParameterJdbcTypeReferenceProvider extends BaseReferenceProvider {
         XmlAttributeValuePsiReference psiReference = new XmlAttributeValuePsiReference(xmlAttributeValue) {
 
             public boolean isSoft() {
-                if ("ORACLECURSOR".equals(getCanonicalText())) {
-                    PsiField oracle = getOracleCursorPsiFields(getElement());
-                    if (oracle == null) {
-                        return true;
-                    }
-                }
-                return false;
+               return true;
             }
 
             @Nullable
