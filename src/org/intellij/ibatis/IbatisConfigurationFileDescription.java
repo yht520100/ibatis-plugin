@@ -17,6 +17,7 @@ public class IbatisConfigurationFileDescription extends DomFileDescription<SqlMa
         registerImplementation(Settings.class, SettingsImpl.class);
         registerImplementation(ResultObjectFactory.class, ResultObjectFactoryImpl.class);
         registerImplementation(TypeAlias.class, TypeAliasImpl.class);
+        registerImplementation(TypeHandler.class, TypeHandlerImpl.class);
         registerImplementation(SqlMap.class, SqlMapImpl.class);
     }
 }
