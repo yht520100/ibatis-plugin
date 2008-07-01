@@ -42,7 +42,7 @@ public class TypeHandlerReferenceProvider extends WrappedReferenceProvider {
                 if (!className.contains(".")) {  // type handler javaType
                     Map<String, TypeHandler> allTypeHandler = getAllTypeHandler(psiElement);
                     if (allTypeHandler.containsKey(className)) {
-                        return allTypeHandler.get(className).getCallback().getValue();
+                        return allTypeHandler.get(className).getXmlTag();
                     }
                 }
                 return super.resolve();
