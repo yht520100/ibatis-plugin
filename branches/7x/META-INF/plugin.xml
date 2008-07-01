@@ -27,6 +27,10 @@
     <depends>com.intellij.javaee</depends>
     <change-notes>
         <![CDATA[
+         <ul>  Change List in 0.8.6
+                  <li>typeHandler reference support</li>
+                  <li>Minor bug fix</li>
+          </ul>
           <ul>  Change List in 0.8.5
                   <li>Bug fix with multiple modules with iBATIS facet added</li>
                   <li>datetime added for jdbc type</li>
