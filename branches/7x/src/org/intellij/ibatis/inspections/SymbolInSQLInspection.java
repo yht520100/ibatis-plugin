@@ -41,7 +41,6 @@ public class SymbolInSQLInspection extends SqlMapInspection {
      * @param holder      dom element annotation holder
      */
     protected void checkInsert(IbatisSqlMapModel sqlMapModel, SqlMap sqlMap, Insert insert, DomElementAnnotationHolder holder) {
-        List<String> nameList = SqlMapSymbolCompletionData.getAllSymbolsInXmlTag(insert.getXmlTag());
         checkSymbol(sqlMapModel, sqlMap, insert, holder, insert.getParameterClass().getValue());
     }
 
@@ -55,7 +54,6 @@ public class SymbolInSQLInspection extends SqlMapInspection {
      * @param holder      domelement annotation holder
      */
     protected void checkUpdate(IbatisSqlMapModel sqlMapModel, SqlMap sqlMap, Update update, DomElementAnnotationHolder holder) {
-        List<String> nameList = SqlMapSymbolCompletionData.getAllSymbolsInXmlTag(update.getXmlTag());
         checkSymbol(sqlMapModel, sqlMap, update, holder, update.getParameterClass().getValue());
     }
 
@@ -65,10 +63,9 @@ public class SymbolInSQLInspection extends SqlMapInspection {
      * @param sqlMapModel sqlMapModel
      * @param sqlMap      current sqlMap
      * @param delete      current select
-     * @param holder      domelement annotation holder
+     * @param holder      dom element annotation holder
      */
     protected void checkDelete(IbatisSqlMapModel sqlMapModel, SqlMap sqlMap, Delete delete, DomElementAnnotationHolder holder) {
-        List<String> nameList = SqlMapSymbolCompletionData.getAllSymbolsInXmlTag(delete.getXmlTag());
         checkSymbol(sqlMapModel, sqlMap, delete, holder, delete.getParameterClass().getValue());
     }
 
@@ -81,7 +78,6 @@ public class SymbolInSQLInspection extends SqlMapInspection {
      * @param holder      domelement annotation holder
      */
     protected void checkStatement(IbatisSqlMapModel sqlMapModel, SqlMap sqlMap, Statement statement, DomElementAnnotationHolder holder) {
-        List<String> nameList = SqlMapSymbolCompletionData.getAllSymbolsInXmlTag(statement.getXmlTag());
         checkSymbol(sqlMapModel, sqlMap, statement, holder, statement.getParameterClass().getValue());
     }
 
