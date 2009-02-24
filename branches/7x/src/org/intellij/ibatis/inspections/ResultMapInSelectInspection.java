@@ -65,7 +65,7 @@ public class ResultMapInSelectInspection extends SqlMapInspection {
                             }
                         }
                     }
-                } catch (Exception e) {
+                } catch (Throwable e) {
                         
                 }
             }
