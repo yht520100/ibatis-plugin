@@ -146,6 +146,7 @@
         <xmlStructureViewBuilderProvider
                 implementation="org.intellij.ibatis.structure.SqlMapConfigStructureViewBuilderProvider"/>
         <psi.referenceContributor implementation="org.intellij.ibatis.IbatisReferenceProvider"/>
+        <completion.contributor language="xml" implementation="org.intellij.ibatis.provider.SqlMapSymbolContributor"/>
     </extensions>
     <application-components>
         <component>
